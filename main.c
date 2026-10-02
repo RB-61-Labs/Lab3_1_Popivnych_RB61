@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include "my_math.h"
 
 int main() {
@@ -79,19 +78,4 @@ int main() {
         printf("%u \t %lf \t %lf \n", i, x, dy);
     }
     return 0;
-}
-
-double func(double x) {
-    return pow(x / 100.0 - 5.0, 5)
-     - pow(x / 50.0 + 10.0, 4)
-     - pow(x / 25.0 - 15.0, 3)
-     - (x * x)
-     - 10.0;
-}
-
-double dfunc(double x) {
-    return (5.0 / 100.0) * pow(x / 100.0 - 5.0, 4)
-     - (4.0 / 50.0)  * pow(x / 50.0 + 10.0, 3)
-     - (3.0 / 25.0)  * pow(x / 25.0 - 15.0, 2)
-     - (2.0 * x);
 }
